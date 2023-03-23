@@ -1,14 +1,29 @@
 class Program():
-    def run():
-        pass
-
     def showMainMenu():
-        pass
+        print("1. Select Account")
+        print("2. Exit")
+
+        try: 
+            userInput = int(input())
+        except:
+            userInput = 0
+
+        if userInput == 1:
+            Program.showAccountMenu()
+
+        elif userInput == 2:
+            pass
+
+        else:
+            print("Please enter a valid input (either 1 or 2).")
+            Program.showMainMenu()
 
     def showAccountMenu():
-        pass
+        print("We got here")
 
-
+    def run():
+        Program.showMainMenu()
+    
 class Account():
     def __init__():
         pass
@@ -58,6 +73,4 @@ class Bank():
     pass
 
 
-
-
-
+Program.run()
